@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Portal Serverx</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to bottom, #4a00e0, #8e2de2, #c86dd7); /* Purple gradient background */
+            overflow: hidden;
+        }
+
+        .portal-box {
+            position: relative;
+            width: 400px;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            overflow: hidden;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .portal-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            background: linear-gradient(135deg, rgba(178, 102, 255, 0.3), rgba(123, 31, 162, 0.3), rgba(216, 191, 216, 0.3)); /* Light purple gradient */
+            background-size: 300% 300%;
+            animation: colorShift 10s linear infinite, pulse 2s infinite alternate;
+            border-radius: 12px;
+        }
+
+        @keyframes colorShift {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.03);
+            }
+        }
+
+        .portal-box .image-container {
+            position: relative;
+            margin-bottom: 20px;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .portal-box .image-container img {
+            max-width: 100%;
+            display: block;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .portal-box .image-container:hover img {
+            transform: scale(1.1);
+        }
+
+        .portal-box input {
+            padding: 12px;
+            margin-bottom: 15px;
+            width: 80%;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            transition: border-color 0.3s ease-in-out;
+        }
+
+        .portal-box input:focus {
+            border-color: #9370DB; /* Purple focus color */
+            outline: none;
+        }
+
+        .portal-box button {
+            padding: 12px 25px;
+            background-color: #9370DB; /* Purple button */
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+        }
+
+        .portal-box button:hover {
+            background-color: #800080; /* Darker purple hover */
+            transform: scale(1.05);
+        }
+
+        #message {
+            margin-top: 15px;
+            font-weight: bold;
+            animation: messageFade 1s ease-in-out;
+        }
+
+        @keyframes messageFade {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="portal-box">
+        <div class="image-container">
+            <img src="https://i.ibb.co/Fkj0FpRz/20250213-232639.jpg" alt="SERVERX">
+        </div>
+        <input type="text" id="username" placeholder="Enter Username">
+        <input type="password" id="password" placeholder="Enter Password">
+        <button onclick="checkCredentials()">Enter</button>
+        <div id="message"></div>
+    </div>
+
+    <script>
+        function checkCredentials() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const message = document.getElementById('message');
+            const correctUsername = "ABHI"; // Replace with your username
+            const correctPassword = "XSEVEN"; // Replace with your password
+
+            if (username === correctUsername && password === correctPassword) {
+                message.textContent = "Successfully opened!";
+                message.style.color = "green";
+                window.location.href = "option.html";
+            } else {
+                message.textContent = "Incorrect credentials. Can't access.";
+                message.style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>
