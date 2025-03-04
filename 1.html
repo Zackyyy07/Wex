@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serverx</title>
+    <link rel="stylesheet" href="1.css">
+    </head>
+<body>
+
+<header>
+    <div class="site-title">S E R V E R X</div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    <nav id="menu">
+        <ul>
+            <li><a href="1.html">Home</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="stutas.html">Status</a></li>
+            <li><a href="https://desihub.darkester.online">DesiHub</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+<script>
+function toggleMenu() {
+    var menu = document.getElementById("menu");
+    menu.classList.toggle("show");
+}
+
+// Close menu when clicking outside
+document.addEventListener("click", function(event) {
+    var menu = document.getElementById("menu");
+    var hamburger = document.querySelector(".hamburger");
+    if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+        menu.classList.remove("show");
+    }
+});
+</script>
+
+<div class="content">
+    <div class="image-box">
+        <img src="https://i.ibb.co/bMR6BLgD/20250304-112716.jpg" alt="Main Image">
+    </div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5839559397534246"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-69+d8-3c-5b+sv"
+     data-ad-client="ca-pub-5839559397534246"
+     data-ad-slot="1509594611"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    <h2>Our Services</h2>
+
+    <div class="services">
+        <div class="service-box">
+            <img src="https://afcrulex.online/images/facebook.jpg" alt="Facebook Automation">
+            <h3>Facebook Automation</h3>
+            <p>Automate Facebook tasks effortlessly with our advanced tools. Schedule posts, manage messages, and boost engagement without hassle.</p>
+        </div>
+
+        <div class="service-box">
+            <img src="https://afcrulex.online/images/whatsapp.jpg" alt="WhatsApp Automation">
+            <h3>WhatsApp Automation</h3>
+            <p>Streamline WhatsApp interactions using intelligent automation. Auto-reply, schedule messages, and enhance communication efficiently.</p>
+        </div>
+    </div>
+</div><footer>
+    <p>&copy; 2025 abhi. All rights reserved.</p>
+</footer>
+</body>
+</html>

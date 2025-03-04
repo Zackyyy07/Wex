@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afc Rulex</title>
+    <link rel="stylesheet" href="about.css">
+    </head>
+<body>
+
+<header>
+    <div class="site-title">S E R V E R X</div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    <nav id="menu">
+        <ul>
+            <li><a href="1.html">Home</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="stutas.html">Status</a></li>
+            <li><a href="https://desihub.darkester.online">DesiHub</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<script>
+function toggleMenu() {
+    var menu = document.getElementById("menu");
+    menu.classList.toggle("show");
+}
+
+// Close menu when clicking outside
+document.addEventListener("click", function(event) {
+    var menu = document.getElementById("menu");
+    var hamburger = document.querySelector(".hamburger");
+    if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+        menu.classList.remove("show");
+    }
+});
+</script>
+
+<main>
+    <section id="about-section">
+        <h1>About Serverx !!</h1>
+        <div class="about-content">
+            <p>Welcome to serverx! We are a leading provider of automated tools designed to enhance your social media presence and productivity. Our solutions are trusted by thousands of users across the globe to streamline Facebook interactions, manage conversations, and extract valuable data effortlessly.</p>
+            
+            <p>At serverx, our mission is to simplify and automate the tasks that take up your valuable time, giving you more control over your online engagements. We offer a suite of tools including Facebook Comment Tools, Messenger Management Tools, and Token Getters, all with the goal of making social media work for you.</p>
+            
+            <p>Founded in 2025, by abhi developer  we continue to innovate and bring cutting-edge solutions to the table, ensuring that our users stay ahead of the competition. Our commitment to quality, security, and user-friendly interfaces is what sets us apart in the industry.</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 abhi. All rights reserved.</p>
+</footer>
+</body>
+</html>

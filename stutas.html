@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Status Dashboard</title>
+    <link rel="stylesheet" href="status.css">
+</head>
+<body>
+    <!-- Include header -->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhi</title>
+    <link rel="stylesheet" href="status2.css">
+    </head>
+<body>
+
+<header>
+    <div class="site-title">S E R V E R X</div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    <nav id="menu">
+        <ul>
+            <li><a href="1.html">Home</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="stutas.html">Status</a></li>
+            <li><a href="https://desihub.darkester.online">DesiHub</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<script>
+function toggleMenu() {
+    var menu = document.getElementById("menu");
+    menu.classList.toggle("show");
+}
+
+// Close menu when clicking outside
+document.addEventListener("click", function(event) {
+    var menu = document.getElementById("menu");
+    var hamburger = document.querySelector(".hamburger");
+    if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+        menu.classList.remove("show");
+    }
+});
+</script>
+
+    <main>
+        <!-- Status Overview Section -->
+        <section class="status-overview">
+            <div class="status-icon">
+                <span class="status-checkmark">✅</span>
+            </div>
+            <h2>All systems are Operational!</h2>
+            <p>Having trouble? <a href="contact.php">Please contact support</a>.</p>
+        </section>
+
+        <!-- Service Status List -->
+        <section class="service-list">
+                                                                    <div class="service-item online">
+                        <span class="service-name">
+                            ✅ All in One Tool (Server 1)                        </span>
+                        <span class="service-latency">2 ms</span>
+                    </div>
+                                                        <div class="service-item online">
+                        <span class="service-name">
+                            ✅ All in One Tool (Server 2)                        </span>
+                        <span class="service-latency">24 ms</span>
+                    </div>
+                                                        <div class="service-item online">
+                        <span class="service-name">
+                            ✅ Token Checker                        </span>
+                        <span class="service-latency">218 ms</span>
+                    </div>
+                                                        <div class="service-item online">
+                        <span class="service-name">
+                            ✅ Page Token Extractor                        </span>
+                        <span class="service-latency">194 ms</span>
+                    </div>
+                                                        <div class="service-item online">
+                        <span class="service-name">
+                            ✅ Filter Token                        </span>
+                        <span class="service-latency">338 ms</span>
+                    </div>
+                                                        <div class="service-item online">
+                        <span class="service-name">
+                            ✅ Cookie 2 Token                        </span>
+                        <span class="service-latency">248 ms</span>
+                    </div>
+                                                        <div class="service-item online">
+                        <span class="service-name">
+                            ✅ Cookie 2 JS0N                        </span>
+                        <span class="service-latency">21 ms</span>
+                    </div>
+                                                        <div class="service-item online">
+                        <span class="service-name">
+                            ✅ Text 2 JS0N                        </span>
+                        <span class="service-latency">105 ms</span>
+                    </div>
+                                                        <div class="service-item online">
+                        <span class="service-name">
+                            ✅ Group Name Locker                        </span>
+                        <span class="service-latency">2 ms</span>
+                    </div>
+                                    </section>
+    </main>
+
+    <!-- Include footer -->
+    <footer>
+    <p>&copy; 2025 abhi. All rights reserved.</p>
+</footer>
+</body>
+</html></body>
+</html>
